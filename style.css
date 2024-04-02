@@ -45,28 +45,38 @@ h3 + h3 {
 
 form {
     padding: 40px; 
-    height: 300px; 
+    height: 320px; 
 }
 
 .basic-details, .contact-details, .passwords {
     display: flex;
     gap: 100px;
 }
+    
+label {
+    display: block;
+    margin: 1.3rem 0 0.2rem 0
+}
+
+label + input {
+    width: 270px;
+    padding: 5px;
+    border-radius: 5px;
+}
 
 .button-div {
-    border: 5px solid blue;
+    /* border: 5px solid blue; */
     padding-left: 40px;
     background-color: #F9FAFB;
     height: calc(100vh - 400px);
 }
-    
-label {
-    display: block;
-    margin: 1.5rem 0 0.2rem 0
-}
 
-label + input {
-    width: 300px;
-    padding: 5px;
+button {
+    font-size: 1.2rem;
+    color: white;
+    font-weight: bold;
+    background-color: #596D48;
+    padding: 10px 40px;
+    margin: 2.5rem 0 1.5rem 0;
     border-radius: 5px;
 }
