@@ -25,7 +25,8 @@ body {
 input {
     /* max-width: 100%; */
     font-size: 100%;
-    /* border: 0; */
+    outline: none;
+    appearance: none;
 }
 
 #container {
@@ -88,7 +89,7 @@ h3 + h3 {
 }
 
 form {
-    padding: 40px; 
+    padding: 30px; 
     height: 320px; 
 }
 
@@ -124,4 +125,30 @@ button {
     padding: 10px 40px;
     margin: 2.5rem 0 1.5rem 0;
     border-radius: 5px;
+}
+
+
+input:focus:required {
+    border: 2px solid red;
+    background-color: transparent;
+}
+
+input:invalid {
+    border: 2px solid red;
+    background-color: rgb(185 35 38 / 0.25);
+}
+
+input:focus:invalid {
+    border: 2px solid red;
+    background-color: transparent
+}
+
+input:focus {
+    border: 2px solid green;
+    background-color: transparent;
+}
+
+input:placeholder-shown {
+    background-color: transparent;
+    border-color: rgb(209, 205, 205);
 }
