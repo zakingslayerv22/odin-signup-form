@@ -8,6 +8,11 @@
     margin: 0; padding: 0;
 }
 
+body {
+    /* min-height: 100%; */
+    /* background-image: url(./images/side-image.jpg); */
+}
+
 input {
     /* max-width: 100%; */
     font-size: 100%;
@@ -23,9 +28,11 @@ input {
 }
 
 /* Come back here for responsiveness */
-.sidebar-container > img[alt="sidebar-image"] {
-    width: 35vw;
-    height: 100%;
+.sidebar-container {
+    background-image: url(./images/side-image.jpg);
+    background-size: cover;
+    width: 800px;
+    /* height: 140vh; */
 }
 
 .rhs-container {
