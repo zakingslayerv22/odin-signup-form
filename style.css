@@ -143,12 +143,21 @@ input:focus:invalid {
     background-color: transparent
 }
 
-input:focus {
+input:focus:valid {
     border: 2px solid green;
     background-color: transparent;
 }
 
+label:has(+ input:invalid) {
+    color: red;
+}
+
+
 input:placeholder-shown {
     background-color: transparent;
     border-color: rgb(209, 205, 205);
+}
+
+label:has(+ input:invalid:placeholder-shown) {
+    color: black;
 }
