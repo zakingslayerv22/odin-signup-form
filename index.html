@@ -55,11 +55,12 @@
                         <div class="passwords">
                             <div class="password-1">
                                 <label for="password-1">Password</label>
-                                <input type="password" id="password-1" name="password" placeholder="Password" required>
+                                <input type="password" id="password-1" name="password" placeholder="Password" onkeyup="passwordConfirm()" required>
+                                <span class="pass-match-info"></span>
                             </div>
                             <div class="password-2">
                                 <label for="confirm-password">Confirm Password</label>
-                                <input type="password" id="confirm-password" name="confirm-password" placeholder="Password again" required>
+                                <input type="password" id="confirm-password" name="confirm-password" placeholder="Password again" onkeyup="passwordConfirm()" required>
                             </div>
                         </div>
 
