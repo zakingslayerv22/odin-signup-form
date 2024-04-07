@@ -7,9 +7,13 @@
     font-family: 'forum-regular';
     src: url('fonts/Forum-Regular.ttf');
     src: url('fonts/Forum-Regular.ttf') format('truetype');
-    font-weight: bolder;
-    
+    font-weight: bolder;  
 }
+
+/* @font-face {
+    font-family: babas-neue-regular;
+    src: url(fonts/Forum-Regular.ttf);
+} */
 
 * {
     box-sizing: border-box;
@@ -92,7 +96,8 @@ input {
 
 form {
     padding: 40px; 
-    height: 360px; 
+    height: 360px;
+    
 }
 
 .basic-details, .contact-details, .passwords {
@@ -102,7 +107,7 @@ form {
     
 label {
     display: block;
-    margin: 1rem 0 0.2rem 0
+    margin: 1rem 0 0.2rem 0;
 }
 
 label + input {
@@ -117,6 +122,9 @@ label + input {
     padding-left: 40px;
     background-color: #F9FAFB;
     height: calc(100vh - 400px);
+    box-shadow: 1px -4px 5px 0px rgb(203 201 201 / 0.75);
+    -webkit-box-shadow: 1px -4px 5px 0px rgb(203 201 201 / 0.75);
+    -moz-box-shadow: 1px -4px 5px 0px rgb(203 201 201 / 0.75);
 }
 
 button {
@@ -126,7 +134,9 @@ button {
     background-color: #596D48;
     padding: 10px 40px;
     margin: 2.5rem 0 1.5rem 0;
+    border: none;
     border-radius: 5px;
+    
 }
 
 
@@ -171,4 +181,14 @@ input:placeholder-shown {
 label:has(+ input:invalid:placeholder-shown),
 label:has(+ input:valid:placeholder-shown) {
     color: black;
+}
+
+.button-div > p {
+    font-family: forum-regular;
+    font-size: 1.12rem;
+    font-weight: bolder;
+}
+
+p > span {
+    color: #596D48;
 }
