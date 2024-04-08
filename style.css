@@ -189,8 +189,15 @@ label:has(+ input:valid:placeholder-shown) {
     font-weight: bolder;
 }
 
-p > span {
+button:hover {
+    background-color: transparent;
+    border: 1px solid #596D48;
     color: #596D48;
+}
+
+p > a {
+    color: #596D48;
+    text-decoration: none;
 }
 
 #pass-match-info {

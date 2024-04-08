@@ -1,6 +1,4 @@
-//define vars
-
-
+//create function
 function passwordConfirm() {
     const password1 = document.querySelector("#password-1");
     const password2 = document.querySelector("#confirm-password");
@@ -23,5 +21,3 @@ function passwordConfirm() {
 }
 
 passwordConfirm();
-
-console.log(password1.textContent);
