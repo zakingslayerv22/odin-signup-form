@@ -182,3 +182,26 @@ label:has(+ input:invalid:placeholder-shown),
 label:has(+ input:valid:placeholder-shown) {
     color: black;
 }
+
+.button-div > p {
+    font-family: forum-regular;
+    font-size: 1.12rem;
+    font-weight: bolder;
+}
+
+p > span {
+    color: #596D48;
+}
+
+#pass-match-info {
+    display: block;
+    font-size: 0.9rem;
+}
+
+.red {
+    color: red;
+}
+
+.green {
+    color: green;
+}
