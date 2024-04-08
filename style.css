@@ -192,3 +192,16 @@ label:has(+ input:valid:placeholder-shown) {
 p > span {
     color: #596D48;
 }
+
+#pass-match-info {
+    display: block;
+    font-size: 0.9rem;
+}
+
+.red {
+    color: red;
+}
+
+.green {
+    color: green;
+}
