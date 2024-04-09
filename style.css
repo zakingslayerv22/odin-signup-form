@@ -3,27 +3,9 @@
     src: url(fonts/Norse-Bold.otf);
 }
 
-@font-face {
-    font-family: 'forum-regular';
-    src: url('fonts/Forum-Regular.ttf');
-    src: url('fonts/Forum-Regular.ttf') format('truetype');
-    font-weight: bolder;  
-}
-
-/* @font-face {
-    font-family: babas-neue-regular;
-    src: url(fonts/Forum-Regular.ttf);
-} */
-
 * {
     box-sizing: border-box;
     margin: 0; padding: 0;
-}
-
-body {
-    /* height should be either auto or 100% */
-    /* min-height: 100%; */
-    /* background-image: url(./images/side-image.jpg); */
 }
 
 input {
@@ -42,7 +24,6 @@ input {
     border: 1px solid red;
 }
 
-/* Come back here for responsiveness */
 .sidebar-container {
     background-image: url(./images/side-image.jpg);
     background-size: cover;
@@ -76,7 +57,7 @@ input {
 .image-credits {
     position: absolute;
     bottom: 10px;
-    left: 27%;
+    left: 20%;
     color: antiquewhite;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
@@ -96,7 +77,7 @@ input {
 }
 
 .rhs-container h3 {
-    font-family: forum-regular;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 1.6rem;
 }
 
@@ -137,7 +118,13 @@ form > :nth-child(2) {
 label {
     display: block;
     margin: 1rem 0 0.2rem 0;
-    font-family: Calibri;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-transform: uppercase;
+    font-size: 0.82rem;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+   
+
 }
 
 label + input {
@@ -166,6 +153,9 @@ button {
     margin: 2.5rem 0 1.5rem 0;
     border: none;
     border-radius: 5px;  
+    box-shadow: 2px 5px 5px 0px rgba(198,186,186,0.75);
+    -webkit-box-shadow: 2px 5px 5px 0px rgba(198,186,186,0.75);
+    -moz-box-shadow: 2px 5px 5px 0px rgba(198,186,186,0.75);
 }
 
 
@@ -209,11 +199,11 @@ input:placeholder-shown {
 
 label:has(+ input:invalid:placeholder-shown),
 label:has(+ input:valid:placeholder-shown) {
-    color: black;
+    color: rgb(75, 75, 75);
 }
 
 .button-div > p {
-    font-family: forum-regular;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 1.12rem;
     font-weight: bolder;
 }
@@ -222,6 +212,7 @@ button:hover {
     background-color: transparent;
     border: 1px solid #596D48;
     color: #596D48;
+    box-shadow: none;
 }
 
 button+p > a {
