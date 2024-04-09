@@ -7,6 +7,11 @@ function passwordConfirm() {
 
     if ((password1.value === "") || (password2.value === "" )) {
         passwordMatchInfo.text = "";
+    } else if (password1.value.length < 6 || password2.value.length < 6) {
+        password1.setCustomValidity("Password must be greater than 5 characters.");
+        password2.setCustomValidity("Password must be greater than 5 characters.");
+        passwordMatchInfo.classList = "red";
+        passwordMatchInfo.textContent = "*Must be greater than 5 characters!";
     } else if (password1.value !== password2.value) {
         password1.setCustomValidity("Please check your password.");
         password2.setCustomValidity("Please check your password.");

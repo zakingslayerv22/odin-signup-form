@@ -33,16 +33,16 @@
             <div class="signup-form">
                 <form action="" method="post" id="form-1">
                     <h3>Let's do this!</h3> 
-                    <p>All fields marked asterisks (*) are required.</p>
+                    <p>All fields marked asterisks (*) are required. </p>
                         <div class="basic-details">
                         
                             <div class="fname">
-                                <label for="first-name">First Name *</label>
-                                <input type="text" id="first-name" name="first-name" pattern="^[^0-9]+$" placeholder="First" required>
+                                <label for="first-name">First Name * </label>
+                                <input type="text" id="first-name" name="first-name" pattern="^[^0-9]+$" minlength="3" maxlength="12" placeholder="First" required>
                             </div>
                             <div class="lname">
                                 <label for="last-name">Last Name *</label>
-                                <input type="text" id="last-name" name="last-name" pattern="^[^0-9]+$" placeholder="Last"required>
+                                <input type="text" id="last-name" name="last-name" pattern="^[^0-9]+$" minlength="3" maxlength="12" placeholder="Last"required>
                             </div>
                         </div>
 
@@ -53,19 +53,19 @@
                             </div>
                             <div class="phone-number">
                                 <label for="phone">Phone Number</label>
-                                <input type="tel" id="phone" name="phone-number" placeholder="Phone" pattern="\(?\d{3}\)?-? *\d{3}-? *-?\d{4}" inputmode="numeric">
+                                <input type="tel" id="phone" name="phone-number" placeholder="10 digit US format" pattern="\(?\d{3}\)?-? *\d{3}-? *-?\d{4}" inputmode="numeric">
                             </div>
                         </div>
 
                         <div class="passwords">
                             <div class="password-1">
                                 <label for="password-1">Password *</label>
-                                <input type="password" id="password-1" name="password" placeholder="Password" onkeyup="passwordConfirm()" required>
+                                <input type="password" id="password-1" name="password" placeholder="Password" minlength="6" maxlength="12" onkeyup="passwordConfirm()" required>
                                 <span id="pass-match-info"></span>
                             </div>
                             <div class="password-2">
                                 <label for="confirm-password">Confirm Password *</label>
-                                <input type="password" id="confirm-password" name="confirm-password" placeholder="Password again" onkeyup="passwordConfirm()" required>
+                                <input type="password" id="confirm-password" name="confirm-password" minlength="6" maxlength="12" placeholder="Password again" onkeyup="passwordConfirm()" required>
                             </div>
                         </div>
 
