@@ -21,10 +21,6 @@ input {
 
 
 .sidebar-container {
-    border: 1px solid red;
-}
-
-.sidebar-container {
     background-image: url(./images/side-image.jpg);
     background-size: cover;
     width: 37%;
@@ -38,7 +34,6 @@ input {
     align-items: center;
     margin-top: 200px; 
     background-color: rgb(0 0 0 / 0.4); 
-    border: 1px solid red;
     height: 170px;
     width: 100%;
 }
@@ -72,7 +67,7 @@ input {
 }
 
 .rhs-container {
-    border: 4px solid green;
+
     width: 63%
 }
 
@@ -84,14 +79,17 @@ input {
 
 
 .introduction {
-    border: 2px solid orange;
-    padding: 100px 150px 0px 40px; 
+    padding: 100px 150px 5px 40px; 
     background-color: #F9FAFB;
 }
-
+/* Some magic is happening here between the padding bottom (5px)
+of the .introduction and the margin bottom (30px)of the 3rd h3 of the
+.introduction. If the padding bottom is 0px, the space will be gone
+but if it is anything above that, it seems to choose the larger value
+between the padding top and the margin bottom. Research about this! */
 .introduction > h3:nth-child(3) {
     margin-top: 20px;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 
 /* form */
@@ -99,7 +97,6 @@ input {
 form {
     padding: 15px 40px 40px; 
     height: 360px;
-    border: 3px solid black; 
 }
 
 
