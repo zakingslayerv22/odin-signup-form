@@ -47,9 +47,11 @@ input {
     background-image: url(./images/side-image.jpg);
     background-size: cover;
     width: 37%;
+    position: relative;
+
 }
 
-.sidebar-container div {
+.sidebar-container > div {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -60,15 +62,32 @@ input {
     width: 100%;
 }
 
-.sidebar-container [alt="sidebar-logo"] {
+.logo-container > [alt="sidebar-logo"] {
     height: 130px;
     width: 100px;
 }
 
-.sidebar-container :nth-child(2) {
+.logo-container > :nth-child(2) {
     font-family: norse-bold, sans-serif;
     color: whitesmoke;
     font-size: 7rem;
+}
+
+.image-credits {
+    position: absolute;
+    bottom: 10px;
+    left: 27%;
+    color: antiquewhite;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.image-credits > a {
+    color: antiquewhite;
+}
+
+.image-credits > a:hover {
+    color: white;
+    text-decoration: underline;
 }
 
 .rhs-container {
@@ -80,6 +99,8 @@ input {
     font-family: forum-regular;
     font-size: 1.6rem;
 }
+
+
 
 .introduction {
     border: 2px solid orange;
@@ -116,6 +137,7 @@ form > :nth-child(2) {
 label {
     display: block;
     margin: 1rem 0 0.2rem 0;
+    font-family: Calibri;
 }
 
 label + input {
@@ -202,7 +224,7 @@ button:hover {
     color: #596D48;
 }
 
-p > a {
+button+p > a {
     color: #596D48;
     text-decoration: none;
 }
